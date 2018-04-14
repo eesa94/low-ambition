@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Low Ambition</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template go here -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+    <!-- nav bar -->
+    <!-- <div class="header">
+      <a href="index.html" id="lowambitionlink">
+        <span>
+          L<span>&ouml;</span>w Ambiti<span>&ouml;</span>n
+        </span>
+      </a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Shows & Meets</a></li>
+          <li><a href="#">Join Us</a></li>
+        </ul>
+    </div> -->
+
+    <!-- <div class="container-fluid">
+      <div class="main-image">
+        <img src="img/drift_crop.jpg" class="img-responsive">
+      </div>
+    </div> -->
+
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="title navbar-brand">
+            <a>L<span>&ouml;</span>w Ambiti<span>&ouml;</span>n</a>
+          </div>
+        </div> <!-- end navbar-header -->
+        <div class="navbar-collapse collapse" style="background-color: #42465e">
+          <ul class="nav navbar-nav navbar-right" id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#shows">Shows & Meets</a></li>
+            <li><a href="#contact">Join Us</a></li>
+          </ul>
+        </div> <!-- nav -->
+
+      </div> <!-- end nav container -->
+    </nav> <!-- end navbar -->
+
+
+
+    <div class="anchor" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <h1>Low Ambition. Low Dreams. Low Lifestyle.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anchor" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <h3>Hello and Welcome</h3>
+            <p>Here, you can find out more about LA, who we are, and what we do.</p>
+            <p>Although chances are, if you are already here, then you probably have a decent idea of what that is.</p>
+          </div>
+          <div class="col-xs-12 col-md-12">
+            <h3>Pops, Bangs, and Burning Rubber...</h3>
+            <p>We are a collective of modified car enthusiasts. Our vision is to create an established community of like-minded enthusiasts in the local area, with aims to expand further afield within the UK and eventually abroad.</p>
+            <p>LA aims to provide a range of experiences, from chilled-out underground meets, to huge, bursting shows, mental track days, drift events, and everything in between. We draw inspiration from the North American car scene.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anchor" id="gallery">
+      <div class="container">
+        <div class="row" id="photos">
+          <h3>Gallery</h3>
+          <p>You can find some snaps from previous LA events below...</p>
+          <div class="col-xs-12 col-md-6">
+            <img onclick="openModal(this);" src="img/200sx_crop.jpg" class="img-responsive" id="myImg">
+            <div id="myModal" class="modal">
+              <span class="close">×</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img onclick="openModal(this);" src="img/brz_2_crop.jpg" class="img-responsive" id="myImg">
+            <div id="myModal" class="modal">
+              <span class="close">×</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img onclick="openModal(this);" src="img/evo_crop.jpg" class="img-responsive" id="myImg">
+            <div id="myModal" class="modal">
+              <span class="close">×</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img onclick="openModal(this);" src="img/gt86_2_crop.jpg" class="img-responsive" id="myImg">
+            <div id="myModal" class="modal">
+              <span class="close">×</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img onclick="openModal(this);" src="img/r8_crop.jpg" class="img-responsive" id="myImg">
+            <div id="myModal" class="modal">
+              <span class="close">×</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img onclick="openModal(this);" src="img/brz_crop.jpg" class="img-responsive" id="myImg">
+            <div id="myModal" class="modal">
+              <span class="close">×</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anchor" id="shows">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <h3>Shows & Meets</h3>
+            <p>A full list of upcoming shows, meets, events, gatherings, track days (just about anything you can imagine)</p>
+            <p>Don't forget to <a href="#contact">follow</a> our social media channels to keep updated</p>
+          </div>
+          <div class="col-xs-12 col-md-6 event">
+            <h4>6 Apr 2018</h4>
+            <p>Rooftop Vibes</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+          </div>
+          <div class="col-xs-12 col-md-6 event">
+            <h4>14 Apr 2018</h4>
+            <p>Track Day</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+          </div>
+          <div class="col-xs-12 col-md-6 event">
+            <h4>21 Apr 2018</h4>
+            <p>Coffee Meet</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+          </div>
+          <div class="col-xs-12 col-md-6 event">
+            <h4>4 May 2018</h4>
+            <p>Rooftop Vibes</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+          </div>
+          <div class="col-xs-12 col-md-6 event">
+            <h4>19 May 2018</h4>
+            <p>Coffee Meet</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+          </div>
+          <div class="col-xs-12 col-md-6 event">
+            <h4>27 May 2018</h4>
+            <p>Drift Event</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anchor" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <h3>Join Us</h3>
+            <p>If you would like to get involved in any way, whether that be attending one of our events, or becoming a member, then don't hesitate to get in touch through any of the channels below</p>
+            <p>We look forward to hearing from you!</p>
+          </div>
+        </div>
+        <div class="row" id="icons">
+          <div class="col-xs-12 col-md-12">
+            <a href="https://www.facebook.com">
+              <img src="img/facebook.png">
+            </a>
+            <a href="https://www.instagram.com">
+              <img src="img/instagram.png">
+            </a>
+            <a href="https://www.snapchat.com">
+              <img src="img/snapchat.png">
+            </a>
+            <a href="https://www.youtube.com">
+              <img src="img/youtube.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anchor">
+      <div class="container" id="footer">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Website by <a href="http://eesa-patel.bitballoon.com/" target="_blank">Eesa Patel</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ============================= -->
+    <!-- All your JavaScript comes now -->
+    <!-- ============================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Can place script tags with JavaScript files here -->
+    <script type="text/javascript">
+      var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        if (href != undefined && href != '#') {
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+        }
+        return false;
+      });
+    </script>
+    <script> //collapse nav bar after clicking a link
+          $(".navbar-nav li a").click(function(event) {
+      if (!$(this).parent().hasClass('dropdown'))
+          $(".navbar-collapse").collapse('hide');
+      });
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      //issue where only the first image opens with the JS from above
+      //below two snippets are taken from stackoverflow, to open multiple images
+      window.openModal = function(img) {
+        modal.style.display = "block";
+        modalImg.src = img.getAttribute("src");
+      }
+
+      var images = document.querySelectorAll('img');
+      for(var i=0, len = images.length; i < len; i++){
+          images[i].addEventListener('click', openModal);
+      }
+    </script>
+  </body>
+</html>
