@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Custom styles for this template go here -->
-    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,30 +31,9 @@
 
   <body data-spy="scroll" data-target=".navbar">
 
-    <!-- nav bar -->
-    <!-- <div class="header">
-      <a href="index.html" id="lowambitionlink">
-        <span>
-          L<span>&ouml;</span>w Ambiti<span>&ouml;</span>n
-        </span>
-      </a>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Shows & Meets</a></li>
-          <li><a href="#">Join Us</a></li>
-        </ul>
-    </div> -->
-
-    <!-- <div class="container-fluid">
-      <div class="main-image">
-        <img src="img/drift_crop.jpg" class="img-responsive">
-      </div>
-    </div> -->
-
-    <!-- navbar starts here -->
+    <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
+      <div class="container-fluid nav-items-container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse"
           data-target=".navbar-collapse">
@@ -58,33 +43,36 @@
             <span class="icon-bar"></span>
           </button>
           <div class="title navbar-brand">
-            <a>L<span>&ouml;</span>w Ambiti<span>&ouml;</span>n</a>
+            <a href="#home">L<span>&ouml;</span>w Ambiti<span>&ouml;</span>n</a>
           </div>
         </div> <!-- end navbar-header -->
         <div class="navbar-collapse collapse" style="background-color: #42465e">
           <ul class="nav navbar-nav navbar-right" id="nav-list">
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#shows">Shows & Meets</a></li>
+            <li><a href="#shows">Shows &amp; Meets</a></li>
             <li><a href="#contact">Join Us</a></li>
           </ul>
-        </div> <!-- nav -->
-
-      </div> <!-- end nav container -->
-    </nav> <!-- end navbar -->
-
+        </div>
+      </div>
+    </nav>
 
 
-    <div class="anchor" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="title">
+    <div class="header-wrapper" id="home">
+      <div class="container" id="header-container">
+        <div class="row" id="header-row">
+          <div class="header">
             <h1>Low Ambition. Low Dreams. Low Lifestyle.</h1>
           </div>
         </div>
+        <div class="down-button">
+          <a href="#about">
+            <i class="fas fa-arrow-circle-down animated flash"></i>
+          </a>
+        </div>
       </div>
     </div>
+
 
     <div class="anchor" id="about">
       <div class="container">
@@ -164,39 +152,57 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
-            <h3>Shows & Meets</h3>
+            <h3>Shows &amp; Meets</h3>
             <p>A full list of upcoming shows, meets, events, gatherings, track days (just about anything you can imagine)</p>
             <p>Don't forget to <a href="#contact">follow</a> our social media channels to keep updated</p>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>6 Apr 2018</h4>
             <p>Rooftop Vibes</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Location TBC
+            </p>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>14 Apr 2018</h4>
             <p>Track Day</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Location TBC
+            </p>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>21 Apr 2018</h4>
             <p>Coffee Meet</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Location TBC
+            </p>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>4 May 2018</h4>
             <p>Rooftop Vibes</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Location TBC
+            </p>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>19 May 2018</h4>
             <p>Coffee Meet</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Location TBC
+            </p>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>27 May 2018</h4>
             <p>Drift Event</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Location TBC</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Location TBC
+            </p>
           </div>
         </div>
       </div>
@@ -250,59 +256,6 @@
     <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
-    <script type="text/javascript">
-      var $root = $('html, body');
-      $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        if (href != undefined && href != '#') {
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-        }
-        return false;
-      });
-    </script>
-    <script> //collapse nav bar after clicking a link
-          $(".navbar-nav li a").click(function(event) {
-      if (!$(this).parent().hasClass('dropdown'))
-          $(".navbar-collapse").collapse('hide');
-      });
-    </script>
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('myImg');
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-      }
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-          modal.style.display = "none";
-      }
-
-      //issue where only the first image opens with the JS from above
-      //below two snippets are taken from stackoverflow, to open multiple images
-      window.openModal = function(img) {
-        modal.style.display = "block";
-        modalImg.src = img.getAttribute("src");
-      }
-
-      var images = document.querySelectorAll('img');
-      for(var i=0, len = images.length; i < len; i++){
-          images[i].addEventListener('click', openModal);
-      }
-    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

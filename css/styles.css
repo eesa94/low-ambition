@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin-top: 80px;
   background-image: url("../img/drift_2_crop.jpg");
@@ -8,66 +12,71 @@ body {
   background-color: grey;
 }
 
+h1 {
+  margin: 0;
+}
+
 /*navbar styling*/
 .navbar {
   background-color: #42465e;
-  /*position: fixed;*/
   width: 100%;
   top: 0;
   height: 80px;
-  /*z-index: 1;*/
   font-family: 'Lato', sans-serif;
+}
+
+.nav-items-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-header, .title .navbar-brand {
   background-color: #42465e;
 }
 
-.container-fluid {
-  transform: translateY(30%);
-}
-
 .title a {
   text-transform: uppercase;
   color: mintcream;
-  font-size: 1.73em;
+  font-size: 3rem;
   font-weight: 700;
   padding-left: 18px;
-  letter-spacing: 0.15em;
-
+  letter-spacing: 3px;
 }
 
-.title a:hover {
+.title a:hover,
+.title a:focus {
   text-decoration: none;
   }
 
 .title a span {
-  font-size: 0.91em;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
-.navbar ul li a {
-  color: mintcream;
+#nav-list a {
+  color: #9d9d9d;
   text-transform: uppercase;
-  font-size: 1.15em;
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 1.6px;
+  padding: 15px 10px;
+  margin: 0 4px;
+  border-radius: 3px;
+  transition: 300ms;
 }
 
-#nav-list li a:hover {
+#nav-list a:hover {
   color: #42465e;
   background-color: mintcream;
 }
 
-.nav>li>a {
-  position: relative;
-  display: block;
-  padding: 15px 10px;
-  margin: 0 4px;
-}
-
-.navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover{
+#nav-list>.active>a,
+#nav-list>.active>a:focus,
+#nav-list>.active>a:hover{
   background-color: #42465e;
+  color: mintcream;
 }
 
 .navbar-toggle {
@@ -79,101 +88,47 @@ body {
 }
 
 
+/*Home styling*/
+.header-wrapper {
+  height: 100vh;
+}
 
-.header {
+#header-container {
+  height: 15%;
+  top: 250px;
+}
+
+#header-row {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 80px;
-  background-color: #42465e;
-  font-family: 'Lato', sans-serif;
-}
-
-.header a {
-  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  /*padding-left: 25px;*/
-  text-transform: uppercase;
-  color: mintcream;
 }
 
-.header span {
-  font-size: 1.93em;
-  font-weight: 700;
+.down-button {
+  margin-top: 20px;
 }
 
-.header span span {
-  font-size: 0.91em;
-  font-weight: 700;
+.fa-arrow-circle-down {
+  font-size: 4rem;
+  color: #e6475c;
 }
 
-.header a:hover {
-  text-decoration: none;
+.flash {
+  animation-iteration-count: infinite;
+  animation-duration: 7.5s;
+  animation-timing-function: cubic-bezier(0.45, 0.1, 0.31, 0.88);
 }
 
-#lowambitionlink:hover {
-  /*color: #00ff7f*/
-}
 
-#lowambitionlink {
-  padding-left: 25px;
-  letter-spacing: 0.15em;
-  /*transition: color 400ms;*/
-}
 
-.header ul {
-  display: inline-flex;
-  align-items: center;
-  list-style: none;
-  padding-right: 20px;
-  margin-bottom: 0px;
-}
 
-.header ul li {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: mintcream;
-}
-
-/*.header ul li:hover {
-  background-color: mintcream;
-}*/
-
-.header ul li a:hover {
-  /*color: #00ff7f;*/
-  color: #42465e;
+.section-anchor {
+  height: 10px;
+  position: relative;
+  top: 150px;
   background-color: mintcream;
 }
-
-.header ul li a {
-  padding: 7px;
-  font-size: 1.15em;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  /*transition: color 400ms;*/
-}
-
-
-
-/*.main-image {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-top: 80px;
-}*/
-
-/*.main-image img {
-  filter: contrast(1.34) brightness(0.83) hue-rotate(174deg);
-  opacity: 0.86;
-}*/
-/*BRZ*/
-
-/*.main-image img {
-  filter: contrast(1.16) brightness(1.15) hue-rotate(322deg);
-  opacity: 0.8;
-}*/
-/*drift*/
 
 .anchor {
   padding-top: 80px;
@@ -187,12 +142,13 @@ body {
   color: #42465e;
   background-color: #f5fffac7;
   border: 1.5px solid #575556;
+  border-radius: 5px;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Mina', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 3px;
 }
 
 p {
@@ -205,15 +161,11 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 1.15em;
   letter-spacing: 0.05em;
-  color: #ce1f1f;
+  color: #e6475c;
 }
 
 a:hover {
   text-decoration: none;
-}
-
-h3 {
-  text-decoration: underline;
 }
 
 #photos img {
@@ -226,9 +178,9 @@ h3 {
   margin-bottom: 5px;
 }
 
-.glyphicon {
+.fa-map-marker-alt {
   padding-right: 2px;
-  color: red;
+  color: #e6475c;
 }
 
 #contact img {
@@ -254,7 +206,6 @@ h3 {
 
 
 /*Modal styling*/
-
 #myImg {
     border-radius: 5px;
     cursor: pointer;
