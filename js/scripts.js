@@ -25,18 +25,18 @@
   var img = document.getElementById('myImg');
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
+  var navigation = document.getElementById("navbar");
   img.onclick = function(){
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+      navigation.style.display = "none";
   }
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
+  modalImg.onclick = function() {
+    modal.style.display = "none";
+    navigation.style.display = "block";
   }
 
   //issue where only the first image opens with the JS from above
@@ -46,7 +46,7 @@
     modalImg.src = img.getAttribute("src");
   }
 
-  var images = document.querySelectorAll('img');
+  var images = document.getElementById("img01");
   for(var i=0, len = images.length; i < len; i++){
       images[i].addEventListener('click', openModal);
   }

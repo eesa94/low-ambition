@@ -32,7 +32,7 @@
   <body data-spy="scroll" data-target=".navbar">
 
     <!-- navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
       <div class="container-fluid nav-items-container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -74,73 +74,78 @@
     </div>
 
 
-    <div class="anchor" id="about">
-      <div class="container">
+    <div class="anchor mb3" id="about">
+      <div class="container section-container">
         <div class="row">
-          <div class="col-xs-12 col-md-12">
-            <h3>Hello and Welcome</h3>
-            <p>Here, you can find out more about LA, who we are, and what we do.</p>
-            <p>Although chances are, if you are already here, then you probably have a decent idea of what that is.</p>
+          <div class="col-xs-6 col-xs-offset-3">
+            <h3 class="section-header">Who We Are</h3>
           </div>
-          <div class="col-xs-12 col-md-12">
-            <h3>Pops, Bangs, and Burning Rubber...</h3>
+          <div class="col-xs-12 col-md-4 col-md-offset-1 justified">
             <p>We are a collective of modified car enthusiasts. Our vision is to create an established community of like-minded enthusiasts in the local area, with aims to expand further afield within the UK and eventually abroad.</p>
-            <p>LA aims to provide a range of experiences, from chilled-out underground meets, to huge, bursting shows, mental track days, drift events, and everything in between. We draw inspiration from the North American car scene.</p>
+          </div>
+          <div class="col-xs-12 col-md-4 col-md-offset-1 justified">
+            <p>LA aims to develop a presence across the entire modified car spectrum, from chilled-out underground meets, to huge, bursting shows, mental track days, drift events, and everything in between.</p>
+          </div>
+          <div class="col-xs-4 col-xs-offset-4 mt3">
+            <h4 class="section-header">Local to Global</h4>
+          </div>
+          <div class="col-xs-12 col-md-8 col-md-offset-2 justified mb3">
+            <p>Drawing inspiration from the North American car scene, we want to be the go-to name for UK petrolheads. Throughout the show season, you can find us at almost every major event in the calendar. Look out for our distinctive stall, and our insane rep cars; you can't miss it!</p>
+            <p>However, we don't plan on stopping there. Our mission is to create a global brand which unites car enthusiasts all over the world. You can help us on our journey by attending our events, connecting with us on social media, and spreading the word.</p>
+            <img src="img/sergei-boldt-190864-unsplash.jpg" class="img-responsive rounded">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="anchor" id="gallery">
-      <div class="container">
+    <div class="anchor mb3" id="gallery">
+      <div class="container section-container">
         <div class="row" id="photos">
-          <h3>Gallery</h3>
-          <p>You can find some snaps from previous LA events below...</p>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-6 col-xs-offset-3">
+            <h3 class="section-header">Gallery</h3>
+          </div>
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>You can find some snaps from previous LA events below...</p>
+          </div>
+          <div class="col-xs-12 col-md-6 photo-col">
             <img onclick="openModal(this);" src="img/200sx_crop.jpg" class="img-responsive" id="myImg">
             <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img01">
+              <img class="modal-content img-responsive" id="img01">
               <div id="caption"></div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 photo-col">
             <img onclick="openModal(this);" src="img/brz_2_crop.jpg" class="img-responsive" id="myImg">
             <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img01">
+              <img class="modal-content img-responsive" id="img01">
               <div id="caption"></div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 photo-col">
             <img onclick="openModal(this);" src="img/evo_crop.jpg" class="img-responsive" id="myImg">
             <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img01">
+              <img class="modal-content img-responsive" id="img01">
               <div id="caption"></div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 photo-col">
             <img onclick="openModal(this);" src="img/gt86_2_crop.jpg" class="img-responsive" id="myImg">
             <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img01">
+              <img class="modal-content img-responsive" id="img01">
               <div id="caption"></div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 photo-col">
             <img onclick="openModal(this);" src="img/r8_crop.jpg" class="img-responsive" id="myImg">
             <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img01">
+              <img class="modal-content img-responsive" id="img01">
               <div id="caption"></div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 photo-col">
             <img onclick="openModal(this);" src="img/brz_crop.jpg" class="img-responsive" id="myImg">
             <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img01">
+              <img class="modal-content img-responsive" id="img01">
               <div id="caption"></div>
             </div>
           </div>
@@ -148,13 +153,17 @@
       </div>
     </div>
 
-    <div class="anchor" id="shows">
-      <div class="container">
+    <div class="anchor mb3" id="shows">
+      <div class="container section-container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
-            <h3>Shows &amp; Meets</h3>
-            <p>A full list of upcoming shows, meets, events, gatherings, track days (just about anything you can imagine)</p>
-            <p>Don't forget to <a href="#contact">follow</a> our social media channels to keep updated</p>
+            <div class="col-xs-6 col-xs-offset-3">
+              <h3 class="section-header">Shows &amp; Meets</h3>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-2 justified">
+              <p>A full list of upcoming shows, meets, events, gatherings, track days (just about anything you can imagine)</p>
+              <p>Don't forget to <a href="#contact">follow</a> our social media channels to keep updated</p>
+            </div>
           </div>
           <div class="col-xs-12 col-md-6 event">
             <h4>6 Apr 2018</h4>
@@ -208,12 +217,16 @@
       </div>
     </div>
 
-    <div class="anchor" id="contact">
-      <div class="container">
+    <div class="anchor mb3" id="contact">
+      <div class="container section-container">
         <div class="row">
-          <div class="col-xs-12 col-md-12">
-            <h3>Join Us</h3>
+          <div class="col-xs-6 col-xs-offset-3">
+            <h3 class="section-header">Join Us</h3>
+          </div>
+          <div class="col-xs-12 col-md-8 col-md-offset-2 justified">
             <p>If you would like to get involved in any way, whether that be attending one of our events, or becoming a member, then don't hesitate to get in touch through any of the channels below</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
             <p>We look forward to hearing from you!</p>
           </div>
         </div>
@@ -236,15 +249,12 @@
       </div>
     </div>
 
-    <div class="anchor">
-      <div class="container" id="footer">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>Website by <a href="http://eesa-patel.bitballoon.com/" target="_blank">Eesa Patel</a></p>
-          </div>
-        </div>
+
+    <footer>
+      <div class="row footer-contents mt2">
+        <h4>Website by <a href="http://eesa-patel.bitballoon.com/" target="_blank">Eesa Patel</a></h4>
       </div>
-    </div>
+    </footer>
 
 
 
