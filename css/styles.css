@@ -122,7 +122,19 @@ h1 {
 
 
 /*About section*/
+#about img {
+  border-radius: 5px;
+}
 
+.continent {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.flag-icon {
+  font-size: 20px;
+  margin: 0 25px 0 35px;
+}
 
 /*Gallery section*/
 .photo-col {
@@ -199,7 +211,6 @@ h1 {
 /*Shows & Meets section*/
 .event {
   margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .fa-map-marker-alt {
@@ -209,20 +220,26 @@ h1 {
 
 
 /*Contact section*/
-#contact img {
-  height: 50px;
-  width: auto;
-  margin-bottom: 20px;
+.fab {
+  font-size: 40px;
 }
 
-#contact img:hover {
+.submit-btn {
+  font-weight: bold;
+  color: #e6475c;
+  border: 2px solid #e6475c;
   background-color: mintcream;
-  border-radius: 20%;
+  transition: 0.3s;
 }
 
-#contact .container {
-  margin-bottom: 270px;
+.submit-btn:hover {
+  color: mintcream;
+  background-color: #e6475c;
 }
+
+/*#contact .container {
+  margin-bottom: 270px;
+}*/
 
 
 /*Footer styling*/
@@ -309,6 +326,10 @@ p {
 
 .justified {
   text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .mt1 {

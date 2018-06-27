@@ -1,6 +1,6 @@
 
   var $root = $('html, body');
-  $('.navbar-nav a, .title a, .down-button a').click(function() {
+  $('.navbar-nav a, .title a, .down-button a, #follow').click(function() {
     var href = $.attr(this, 'href');
     if (href != undefined && href != '#') {
       $root.animate({
@@ -33,7 +33,7 @@
       navigation.style.display = "none";
   }
 
-  // When the user clicks on <span> (x), close the modal
+  // modal exit strategy
   modalImg.onclick = function() {
     modal.style.display = "none";
     navigation.style.display = "block";
@@ -44,6 +44,7 @@
   window.openModal = function(img) {
     modal.style.display = "block";
     modalImg.src = img.getAttribute("src");
+    navigation.style.display = "none";
   }
 
   var images = document.getElementById("img01");
