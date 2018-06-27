@@ -1,6 +1,6 @@
 
   var $root = $('html, body');
-  $('.navbar-nav a, .title a, .down-button a, #follow').click(function() {
+  $('.navbar-nav a, .title a, .down-button a, #follow, .nav-link').click(function() {
     var href = $.attr(this, 'href');
     if (href != undefined && href != '#') {
       $root.animate({
@@ -51,3 +51,14 @@
   for(var i=0, len = images.length; i < len; i++){
       images[i].addEventListener('click', openModal);
   }
+
+  // collapsed-navbar
+  $('#navbar-open').click(function() {
+    $('.collapsed-navbar').css('width', '300px');
+    $('.navbar').css('display', 'none');
+  });
+
+  $('#navbar-close, .nav-link').click(function() {
+    $('.collapsed-navbar').css('width', '0');
+    $('.navbar').css('display', 'block');
+  });

@@ -34,18 +34,12 @@
     <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
       <div class="container-fluid nav-items-container">
+        <i class="fas fa-bars" id="navbar-open"></i>
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse"
-          data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <div class="title navbar-brand">
             <a href="#home">L<span>&ouml;</span>w Ambiti<span>&ouml;</span>n</a>
           </div>
-        </div> <!-- end navbar-header -->
+        </div>
         <div class="navbar-collapse collapse" style="background-color: #42465e">
           <ul class="nav navbar-nav navbar-right" id="nav-list">
             <li><a href="#about">About</a></li>
@@ -55,6 +49,16 @@
           </ul>
         </div>
       </div>
+    </nav>
+
+    <nav class="collapsed-navbar" role="navigation">
+      <i class="fas fa-times" id="navbar-close"></i>
+      <ul class="collapsed-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#shows" class="nav-link">Shows &amp; Meets</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
 
 
@@ -270,19 +274,19 @@
     <div class="anchor mb3" id="contact">
       <div class="container section-container">
         <div class="row">
-          <div class="col-xs-6 col-xs-offset-3 mb3">
+          <div class="col-xs-6 col-xs-offset-3">
             <h3 class="section-header">Contact</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 mt2">
             <p class="mb2">Follow LA on social media to keep up to date with the latest news, and make sure you don't miss out on upcoming events.</p>
-            <p><i class="fab fa-facebook-square"></i></p>
-            <p><i class="fab fa-instagram"></i></p>
-            <p><i class="fab fa-snapchat-square"></i></p>
-            <p><i class="fab fa-youtube"></i></p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat-square"></i>
+            <i class="fab fa-youtube"></i>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7 mt2">
             <p class="mb2">If you have a query about absolutely anything, drop us a line below and we'll get back to you.</p>
             <form>
               <div class="form-row">
