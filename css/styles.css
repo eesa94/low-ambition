@@ -114,10 +114,6 @@ h1 {
   list-style-type: none;
 }
 
-.collapsed-list li {
-  margin-top: 5px;
-}
-
 .collapsed-list a {
   color: mintcream;
   font-family: 'Lato', sans-serif;
@@ -503,14 +499,14 @@ p {
 @media (max-width: 575px) {
 
   body {
-    /*background-image: none;*/
+    background-image: none;
     background-color: #e7f4fb;
-    background-position: -460px -120px;
+    /*background-position: -460px 0px;*/
   }
 
   #header-container {
-    /*background-color: #e7f4fb;*/
-    /*border: none;*/
+    /*background-color: #e7f4fb;
+    border: none;*/
   }
 
   #header-row {
